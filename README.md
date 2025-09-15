@@ -50,7 +50,7 @@ The purpose of this project is to **compare traditional and deep learning method
 - Example detections:  
 <img width="960" height="443" alt="image" src="https://github.com/user-attachments/assets/e8856527-2605-4f22-bc59-b1d2a8b4bad3" />
 
-- You Can watch the full result video named "YOLO_out.mp4"
+- You Can watch the full result video named "project_video_yolo.avi"
 
 
 
