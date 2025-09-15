@@ -41,13 +41,15 @@ The purpose of this project is to **compare traditional and deep learning method
 - Achieved ~98.4% accuracy on the test dataset (cars vs. non-cars).
 - Example detections:
 <img width="960" height="443" alt="image" src="https://github.com/user-attachments/assets/60b55de6-401f-464a-be76-c1f2abd1f0bc" />
- 
+ -- You Can watch the full result video named "VD_Final_out.mp4"
 
 ### YOLOv11 Detector  
 - Provides **real-time vehicle detection** on images and video.  
 - Detects multiple vehicles simultaneously with high confidence.  
 - Example detections:  
 <img width="960" height="443" alt="image" src="https://github.com/user-attachments/assets/e8856527-2605-4f22-bc59-b1d2a8b4bad3" />
+ -- You Can watch the full result video named "YOLO_out.mp4"
+
 
 
 
