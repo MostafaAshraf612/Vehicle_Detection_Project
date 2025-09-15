@@ -43,7 +43,7 @@ The purpose of this project is to **compare traditional and deep learning method
    
 
 
-https://github.com/user-attachments/assets/7832fa21-83d8-4030-9aff-e4f227761a8d
+
 
 
 
