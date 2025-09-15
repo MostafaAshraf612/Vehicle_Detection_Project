@@ -42,14 +42,16 @@ The purpose of this project is to **compare traditional and deep learning method
 - Example detections:
    
 
-*(Insert sample images with bounding boxes here)*  
 
-### YOLOv8 Detector  
+https://github.com/user-attachments/assets/7832fa21-83d8-4030-9aff-e4f227761a8d
+
+
+
+### YOLOv11 Detector  
 - Provides **real-time vehicle detection** on images and video.  
 - Detects multiple vehicles simultaneously with high confidence.  
 - Example detections:  
 
-*(Insert YOLO detection screenshots here)*  
 
 
 
