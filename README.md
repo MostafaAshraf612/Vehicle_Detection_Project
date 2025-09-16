@@ -42,7 +42,7 @@ The purpose of this project is to **compare traditional and deep learning method
 - Example detections:
 <img width="960" height="443" alt="image" src="https://github.com/user-attachments/assets/60b55de6-401f-464a-be76-c1f2abd1f0bc" />
 
-- You Can watch the full result video named "VD_Final_out.mp4"
+- You Can watch the full result video named "project_video_svm.mp4"
 - The Performance can be enhanced by tuning the sizes of the windows and the heatmap threshold value.
 
 ### YOLOv11 Detector  
