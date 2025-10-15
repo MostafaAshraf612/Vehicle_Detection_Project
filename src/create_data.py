@@ -64,3 +64,4 @@ svc.fit(x_train, y_train)
 # Evaluate accuracy on test set
 acc = svc.score(x_test, y_test)
 print('✅ Accuracy on test set: {:.4f}'.format(acc))
+
