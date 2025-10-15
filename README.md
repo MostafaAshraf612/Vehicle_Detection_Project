@@ -1,59 +1,62 @@
-## Overview  
+# 🚘 Vehicle Detection Project
 
-This project implements a vehicle detection pipeline using both **traditional computer vision techniques** and **modern deep learning methods**.  
+A simulation-based comparison of traditional computer vision and deep learning techniques for vehicle detection in autonomous driving contexts.
 
-1. **Feature Extraction & SVM Classifier**  
-   - Uses Histogram of Oriented Gradients (HOG), color histograms, and spatial binning.  
-   - Features are scaled and fed into a **Linear SVM** for car vs. non-car classification.  
+## 📌 Project Summary
 
-2. **Deep Learning with YOLO**  
-   - Explores the YOLOv8 model for real-time object detection.  
-   - Provides a comparison between traditional methods and deep learning performance.  
+This project explores two approaches to vehicle detection:
 
-3. **Applications**  
-   - Detecting vehicles in still images.  
-   - Extending to video streams for self-driving car perception.  
+- **Traditional CV + SVM**  
+  Feature extraction using HOG, spatial binning, and color histograms, followed by a Linear SVM classifier for car/non-car classification.
 
-This repo contains **data preprocessing utilities, feature extraction modules, training scripts, and evaluation notebooks**, making it a complete framework for experimenting with vehicle detection.  
-## How It Works  
+- **Deep Learning with YOLOv8**  
+  Real-time object detection using a modern neural network architecture, trained end-to-end for vehicle localization.
 
-The project is divided into two main approaches for vehicle detection:  
+## 🎯 Objectives
 
-### 1. Traditional Computer Vision + Machine Learning  
-- Images are processed using **feature extraction techniques**:  
-  - **Spatial Binning** – reduces image size and flattens pixel values.  
-  - **Color Histograms** – captures color distribution across channels.  
-  - **HOG (Histogram of Oriented Gradients)** – extracts edge and texture patterns.  
-- The extracted features are scaled and combined into a single feature vector.  
-- A **Linear SVM classifier** is trained to distinguish between car and non-car images.  
+- Compare handcrafted feature pipelines vs. deep learning models  
+- Evaluate detection performance on images and video  
+- Simulate perception modules for autonomous vehicle applications
 
-### 2. Deep Learning with YOLO  
-- Integrates **YOLOv8**, a modern object detection network.  
-- Unlike handcrafted features, YOLO learns features directly from data.  
-- Provides **real-time detection** performance, making it suitable for self-driving applications.  
+## 🧠 Techniques Used
 
-### Goal  
-The purpose of this project is to **compare traditional and deep learning methods** for vehicle detection, highlighting their strengths and trade-offs in terms of accuracy, speed, and complexity.  
+| Approach       | Tools & Methods                                      |
+|----------------|------------------------------------------------------|
+| Traditional CV | HOG, Color Histograms, Spatial Binning, Linear SVM   |
+| Deep Learning  | YOLOv8, OpenCV, Python                               |
 
-## Results  
+## 📂 Repo Structure
+```
+Vehicle_Detection_Project/
+├── asset/
+│   ├── project_video_svm2.mp4
+│   └── project_video_yolo.avi
+├── src/
+│   ├── create_data.py
+│   ├── image_processing.py
+│   ├── vehicle_detection.py
+├── README.md
+└── test_images.zip
+```
+## 📈 Results
 
-### SVM Classifier  
-- Achieved ~98.4% accuracy on the test dataset (cars vs. non-cars).
-- Example detections:
-<img width="960" height="443" alt="image" src="https://github.com/user-attachments/assets/60b55de6-401f-464a-be76-c1f2abd1f0bc" />
+### SVM Classifier
 
-- You Can watch the full result video named "project_video_svm.mp4"
-- The Performance can be enhanced by tuning the sizes of the windows and the heatmap threshold value.
-
-### YOLOv11 Detector  
-- Provides **real-time vehicle detection** on images and video.  
-- Detects multiple vehicles simultaneously with high confidence.  
-- Example detections:  
-<img width="960" height="443" alt="image" src="https://github.com/user-attachments/assets/e8856527-2605-4f22-bc59-b1d2a8b4bad3" />
-
-- You Can watch the full result video named "project_video_yolo.avi"
+- Achieved ~98.4% accuracy on the test dataset (car vs. non-car classification)
+- Detects vehicles in images and video streams
+- Performance tunable via window size and heatmap threshold
+- Demo video:"assets/project_video_svm.mp4"
 
 
+### YOLOv8 Detector
+
+- Real-time vehicle detection with high confidence
+- Capable of detecting multiple vehicles simultaneously
+- Suitable for perception modules in autonomous driving systems
+- Demo video: "assets/project_video_yolo.avi"
 
 
+---
 
+> 💡 Developed as part of the Udacity Self Driving Car Nanodegree(v1.0)..  
+> This project showcases simulation-based perception techniques for autonomous vehicles.
