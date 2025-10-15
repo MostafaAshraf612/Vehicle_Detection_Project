@@ -9,7 +9,7 @@ This project explores two approaches to vehicle detection:
 - **Traditional CV + SVM**  
   Feature extraction using HOG, spatial binning, and color histograms, followed by a Linear SVM classifier for car/non-car classification.
 
-- **Deep Learning with YOLOv8**  
+- **Deep Learning with YOLOv11**  
   Real-time object detection using a modern neural network architecture, trained end-to-end for vehicle localization.
 
 ## 🎯 Objectives
