@@ -26,7 +26,7 @@
 ## 📌 Overview
 
 A dual-pipeline vehicle detection system comparing traditional computer vision techniques with deep learning models.  
-This project simulates perception modules for autonomous driving using both **SVM + HOG** and **YOLOv8**.
+This project simulates perception modules for autonomous driving using both **SVM + HOG** and **YOLOv11**.
 
 Developed as part of the **Udacity Self-Driving Car Nanodegree**, it showcases object detection strategies for real-time vehicle localization.
 
@@ -35,7 +35,7 @@ Developed as part of the **Udacity Self-Driving Car Nanodegree**, it showcases o
 ## ✨ Features
 
 - **HOG + SVM Classifier:** Detects vehicles using handcrafted features and sliding window search  
-- **YOLOv8 Detector:** Real-time, end-to-end deep learning model for multi-vehicle detection  
+- **YOLOv11 Detector:** Real-time, end-to-end deep learning model for multi-vehicle detection  
 - **Video Pipeline:** Processes driving footage frame-by-frame  
 - **Modular Design:** Easy to switch between detection methods  
 - **Performance Comparison:** Benchmarks accuracy and speed across both pipelines
@@ -47,7 +47,7 @@ Developed as part of the **Udacity Self-Driving Car Nanodegree**, it showcases o
 1. **Data Preparation** – Extracts labeled car/non-car images  
 2. **Feature Extraction** – Applies HOG, color histograms, and spatial binning  
 3. **SVM Training** – Builds a binary classifier for vehicle detection  
-4. **YOLOv8 Inference** – Loads pretrained model for real-time detection  
+4. **YOLOv11 Inference** – Loads pretrained model for real-time detection  
 5. **Video Processing** – Applies detection frame-by-frame and overlays results
 
 ---
@@ -99,7 +99,7 @@ pip install ultralytics
 # Run SVM pipeline
 python src/vehicle_detection.py // choose the vehicle_detection function
 
-# Run YOLOv8 pipeline
+# Run YOLOv11 pipeline
 python src/vehicle_detection.py // choose the vehicle_detection_YOLO function
 ```
 ---
@@ -108,14 +108,14 @@ python src/vehicle_detection.py // choose the vehicle_detection_YOLO function
 The project compares two detection strategies:
 
 - **SVM + HOG:** Uses handcrafted features and sliding window search  
-- **YOLOv8:** Deep learning model trained on COCO dataset for real-time detection  
+- **YOLOv11:** Deep learning model trained on COCO dataset for real-time detection  
 Each frame is processed to detect vehicles, and results are visualized with bounding boxes.
 
 ---
 
 ## ⚖️ Comparison
 
-| Feature               | SVM + HOG                         | YOLOv8                              |
+| Feature               | SVM + HOG                         | YOLOv11                             |
 |----------------------|-----------------------------------|-------------------------------------|
 | Accuracy             | ~98.4%                            | Very High (pretrained on COCO)      |
 | Speed                | Slower (frame-by-frame)           | Real-time                           |
@@ -132,7 +132,7 @@ The system successfully detects vehicles in varied traffic scenes using both pip
 📹 **Demo Preview:**  
 ## 🎥 Pipeline Demonstrations
 
-| SVM + HOG Detection | YOLOv8 Detection |
+| SVM + HOG Detection | YOLOv11 Detection |
 |---------------------|------------------|
 | <img src="https://github.com/MostafaAshraf612/Vehicle_Detection_Project/blob/main/asset/SVM_demo.gif" width="400"/> | <img src="https://github.com/MostafaAshraf612/Vehicle_Detection_Project/blob/main/asset/Yolo_demo.gif" width="400"/> |
 
@@ -140,7 +140,7 @@ The system successfully detects vehicles in varied traffic scenes using both pip
 
 ### ✅ Performance Metrics
 
-| 🔍 **Metric**              | 📊 **SVM**         | ⚡ **YOLOv8**       |
+| 🔍 **Metric**              | 📊 **SVM**         | ⚡ **YOLOv11**       |
 |---------------------------|-------------------|--------------------|
 | Detection Accuracy        | ~98.4%            | Very High          |
 | Frame Processing Time     | ~0.5 sec/frame    | ~0.05 sec/frame    |
